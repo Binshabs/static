@@ -29,7 +29,8 @@
           <div class="child">
            
             <a href="{% url 'update' task.id %}" class="btn btn-primary p-2 m-2">Update</a>
-            <button class="btn btn-success p-2 m-2">Done</button>
+            <a href="{% url 'update' task.id %}" class="btn btn-success p-2 m-2">Delete</a>
+            
           </div>
         </div>
         {% empty %}
