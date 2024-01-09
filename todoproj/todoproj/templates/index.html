@@ -12,28 +12,32 @@
           <input type="number" name="priority" placeholder="priority" class="form-control">
         </div>
         <div class="my-3 text-center">
-          <button class="btn btn-primary">Add</button>
+          <button class="btn btn-primary p-2 m-3">Add</button>
         </div>
       </form>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 p-3">
       <h1 class="text-center">Task to be complete</h1>
-      <div class="container">
+      <div class="container w-50%">
         {% for task in tasks %}
         <div class="tasks d-flex justify-content-between flex-wrap">
-          <div class="child">{{task.task}}</div>
+          <div class="child">{{task.task}} </div>
+          <div class="child"> {{task.priority}}</div> 
+          
+         
+         
           <div class="child">
-            <button class="btn btn-primary">Update</button>
-            <button class="btn btn-success">Done</button>
+           
+            <a href="{% url 'update' task.id %}" class="btn btn-primary p-2 m-2">Update</a>
+            <button class="btn btn-success p-2 m-2">Done</button>
           </div>
         </div>
+        {% empty %}
+        <h3 class="text-primary">Task is empty</h3>
         {% endfor %}
     </div>
   </div>
 </div>
+{% endblock %} 
 
 
-  
-
- 
-{% endblock %}
