@@ -23,24 +23,19 @@
       </form>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 p-3">
-      <h1 class="text-center m-1">Task to be complete</h1>
+      <h1 class="text-center m-1">TASK TO BE COMPLETED</h1>
       <div class="container w-50%">
-        {% for task in tasks %}
+        {% for task in task %}
         <div class="tasks d-flex justify-content-between flex-wrap">
-          <div class="child"><img src="{{task.image.url}}">  alt="{{task.name}} "</div>
+          <div class="child"><img src="{{task.image.url}}"  alt="no image"></div>
           <div class="child">{{task.task}} </div>
           <div class="child"> {{task.priority}}</div> 
-           
-         
-        
-          
-         
          
           <div class="child">
            
             <a href="{% url 'update' task.id %}" class="btn btn-primary p-2 m-2">Update</a>
             <a href="{% url 'delete' task.id %}" class="btn btn-success p-2 m-2">Delete</a>
-            <a class="btn btn-success">Done</a>
+            {% comment %} <a class="btn btn-success">Done</a> {% endcomment %}
             
           </div>
         </div>
