@@ -1,0 +1,43 @@
+span{
+   background-color: red;
+}
+.abc{
+    padding-left: 400px;
+}
+.a{
+    margin-left: 5px;
+}
+.b{
+    margin-left: 500px;
+}
+.c{
+    margin-left: 20px;
+   
+}
+.ee{
+    padding-left: 400px;
+}
+.aa{
+    font-size:1rem;
+    padding-left: 400px;
+}
+.dd{
+    padding-left: 300px;
+}
+.oo h3{
+    font-size: 1.8rem;
+    font-weight: 20px;
+    padding-left: 200px;
+}
+.oo h4{
+    font-size: 1rem;
+    font-weight: 20px;
+    padding-left: 1000px;
+    padding-bottom: 30px;
+}
+.pp h2{
+    font-size: 1.2rem;
+}
+.pp h3{
+    font-size: 1rem;
+}
