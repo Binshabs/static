@@ -6,10 +6,8 @@ urlpatterns = [
     path('',views.Home,name='Home'),
     
     
-    path('update/<int:id>',views.Update,name='update'),
+    path('form/',views.form,name='form'),
     
-    path('delete/<int:id>',views.Delete,name='delete'),
-    
-    
+   
     
 ]
